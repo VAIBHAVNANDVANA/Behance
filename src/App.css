@@ -1,0 +1,190 @@
+/* src/App.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 10px;
+}
+
+.login-button, .signup-button {
+    background-color: transparent;
+    border: 1px solid #333;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.signup-button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+}
+
+.signup-button:hover, .login-button:hover {
+    opacity: 0.8;
+}
+
+.search-bar {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-suggestions {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.autocomplete-suggestions div {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.autocomplete-suggestions div:hover {
+    background-color: #ddd;
+}
+
+.sort-by-category {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+    background: #ffffff;
+}
+
+.sort-by-category button {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: none;
+    cursor: pointer;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.image-card {
+    position: relative;
+    width: calc(33.333% - 20px);
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-stats {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.like-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+}
+
+.like-button.liked {
+    color: red;
+}
+
+.view-count {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #333;
+}
+
+.modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filters button {
+    padding: 10px 20px;
+    background-color: #e0e0e0;
+    border: solid 0.5px rgba(78, 77, 77, 0.471);
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 5px;
+}
+
+.filters{
+    padding: 10px 20px;
+    background: #ffffff;
+}
